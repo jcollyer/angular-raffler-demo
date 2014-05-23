@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
   <title>Raffler</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => false %>
+  <%= javascript_include_tag "application" %>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app>
 
 <div id="container">
   <%= yield %>
